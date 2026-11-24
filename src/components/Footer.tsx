@@ -2,8 +2,9 @@
 
 import React from "react";
 import Link from "next/link";
-import { Sprout, ArrowUpRight } from "lucide-react";
-import { CATEGORIES, VERTICALS } from "@/data/intelligence";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import { CATEGORIES, VERTICALS, siteConfig } from "@/data";
 import { SubscribeForm } from "@/components/SubscribeForm";
 
 export function Footer() {
@@ -53,18 +54,21 @@ export function Footer() {
         {/* Middle Navigation Columns */}
         <div className="grid gap-10 py-12 sm:grid-cols-2 lg:grid-cols-12">
           <div className="lg:col-span-4">
-            <Link href="/" className="inline-flex items-center gap-2.5">
-              <span className="flex h-9 w-9 items-center justify-center rounded-xl bg-[#163F32] border border-[#2E7D4F]/40">
-                <Sprout className="h-4.5 w-4.5 text-[#D99B26]" />
-              </span>
-              <span className="font-editorial text-xl font-semibold text-[#F9F6F0]">
-                Meridian Canopy
-              </span>
+            <Link href="/" className="inline-flex items-center gap-2.5 transition-opacity hover:opacity-90">
+              <div className="rounded-xl bg-[#FFFDF9] px-3 py-1.5 shadow-sm">
+                <Image
+                  src="/images/kreya-logo.png"
+                  alt="Kreya Branding"
+                  width={140}
+                  height={36}
+                  className="h-7 w-auto object-contain"
+                />
+              </div>
             </Link>
             <p className="mt-4 max-w-sm text-sm leading-relaxed text-[#B8CFC4]">
-              An independent weekly industry intelligence platform translating
-              global crop science, biologicals, regulatory shifts, and AgTech
-              signals into actionable commercial insight.
+              An independent weekly industry intelligence platform by Kreya
+              Branding translating global crop science, biologicals, regulatory
+              shifts, and AgTech signals into actionable commercial insight.
             </p>
             <p className="font-data mt-5 text-[11px] uppercase text-[#D99B26]">
               Curated with strategic clarity
@@ -146,7 +150,7 @@ export function Footer() {
         {/* Bottom Attribution Bar */}
         <div className="flex flex-col items-start justify-between gap-4 border-t border-[#24473B] pt-8 text-xs text-[#9AB5A8] sm:flex-row sm:items-center">
           <p>
-            © 2026 Meridian Canopy Intelligence. Curated with strategic clarity
+            © {new Date().getFullYear()} Kreya Branding. Curated with strategic clarity
             for executive teams.
           </p>
           <div className="flex items-center gap-5">

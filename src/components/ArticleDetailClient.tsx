@@ -82,7 +82,7 @@ export function ArticleDetailClient({
 
   const handleShareWhatsApp = () => {
     const text = encodeURIComponent(
-      `${article.title} — Meridian Canopy Weekly Brief: ${
+      `${article.title} — Kreya Branding Weekly Brief: ${
         typeof window !== "undefined" ? window.location.href : ""
       }`
     );

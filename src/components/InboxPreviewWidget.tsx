@@ -2,16 +2,16 @@
 
 import React, { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Monitor,
   Smartphone,
   ArrowRight,
-  Sprout,
   Globe2,
   Clock,
 } from "lucide-react";
-import { CURRENT_ISSUE, getCurrentIssueArticles } from "@/data/intelligence";
+import { CURRENT_ISSUE, getCurrentIssueArticles } from "@/data";
 import { EditorialArtwork } from "@/components/EditorialArtwork";
 
 export function InboxPreviewWidget() {
@@ -99,10 +99,15 @@ export function InboxPreviewWidget() {
               <div className="border-b border-[#E6DFD3] bg-[#0D2B22] px-5 py-4 text-[#F9F6F0]">
                 <div className="flex items-center justify-between">
                   <div className="flex items-center gap-2">
-                    <Sprout className="h-4 w-4 text-[#D99B26]" />
-                    <span className="font-editorial text-sm font-semibold">
-                      Meridian Canopy
-                    </span>
+                    <div className="rounded-md bg-[#FFFDF9] px-2 py-0.5 shadow-xs">
+                      <Image
+                        src="/images/kreya-logo.png"
+                        alt="Kreya Branding"
+                        width={90}
+                        height={22}
+                        className="h-4 w-auto object-contain"
+                      />
+                    </div>
                   </div>
                   <span className="font-data text-[10px] uppercase text-[#B8CFC4]">
                     Issue #{CURRENT_ISSUE.number} • 4 Min Read

@@ -2,6 +2,7 @@
 
 import React, { useState, useRef, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
@@ -9,19 +10,11 @@ import {
   Menu,
   X,
   Check,
-  Sprout,
   Clock,
   ArrowUpRight,
 } from "lucide-react";
-import { VERTICALS } from "@/data/intelligence";
+import { VERTICALS, NAV_LINKS, siteConfig } from "@/data";
 import { useSubscribe } from "@/components/SubscribeContext";
-
-const NAV_LINKS = [
-  { href: "/#briefing", label: "This Week's Briefing" },
-  { href: "/editions", label: "Past Editions" },
-  { href: "/#signals", label: "Client Insights" },
-  { href: "/archive", label: "Archive" },
-];
 
 export function Navbar() {
   const pathname = usePathname();
@@ -57,19 +50,17 @@ export function Navbar() {
           <Link
             href="/"
             id="brand-logo-link"
-            className="group flex shrink-0 items-center gap-2 sm:gap-2.5"
+            className="group flex shrink-0 items-center gap-2 transition-opacity hover:opacity-90 sm:gap-2.5"
+            aria-label="Kreya Branding Home"
           >
-            <span className="flex h-8 w-8 items-center justify-center rounded-xl bg-[#0D2B22] text-[#F9F6F0] shadow-[0_6px_16px_rgba(13,43,34,0.18)] transition-transform duration-200 group-hover:scale-105 sm:h-9 sm:w-9">
-              <Sprout className="h-4 w-4 text-[#D99B26] sm:h-4.5 sm:w-4.5" />
-            </span>
-            <div className="leading-none">
-              <span className="font-editorial block text-[15px] font-semibold tracking-tight text-[#0D2B22] sm:text-lg">
-                Meridian Canopy
-              </span>
-              <span className="font-data hidden text-[9.5px] uppercase text-[#4D6B60] sm:block">
-                Executive Intelligence
-              </span>
-            </div>
+            <Image
+              src="/images/kreya-logo.png"
+              alt="Kreya Branding"
+              width={160}
+              height={40}
+              className="h-8 w-auto object-contain sm:h-9"
+              priority
+            />
           </Link>
 
           <span

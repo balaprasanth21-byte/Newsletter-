@@ -15,7 +15,7 @@ export default function NotFound() {
         This intelligence brief has moved or isn&apos;t published yet.
       </h1>
       <p className="mt-3 max-w-md text-sm leading-relaxed text-[#24473B]">
-        Return to Issue #42 or search the full Meridian Canopy archive to find
+        Return to Issue #42 or search the full Kreya Branding archive to find
         global crop science and AgTech insights.
       </p>
       <div className="mt-7 flex flex-wrap items-center justify-center gap-3">

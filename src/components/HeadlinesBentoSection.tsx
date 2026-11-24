@@ -9,7 +9,7 @@ import {
   CATEGORIES,
   CURRENT_ISSUE,
   getCurrentIssueArticles,
-} from "@/data/intelligence";
+} from "@/data";
 import { Category, NewsArticle } from "@/types/intelligence";
 import { EditorialArtwork } from "@/components/EditorialArtwork";
 

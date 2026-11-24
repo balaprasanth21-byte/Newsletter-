@@ -14,18 +14,9 @@ import {
   Layers,
   BookOpen,
 } from "lucide-react";
-import { ARTICLES, CATEGORIES, WEEKLY_EDITIONS } from "@/data/intelligence";
+import { ARTICLES, CATEGORIES, WEEKLY_EDITIONS, REGIONS } from "@/data";
 import { Category } from "@/types/intelligence";
 import { EditorialArtwork } from "@/components/EditorialArtwork";
-
-const REGIONS = [
-  "All Regions",
-  "Global",
-  "India & South Asia",
-  "Europe",
-  "North America",
-  "APAC & Africa",
-];
 
 export function ArchiveExplorerClient() {
   const searchParams = useSearchParams();

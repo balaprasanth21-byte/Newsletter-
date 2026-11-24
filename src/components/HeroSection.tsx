@@ -2,7 +2,7 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { CURRENT_ISSUE } from "@/data/intelligence";
+import { CURRENT_ISSUE } from "@/data";
 import { TopographicContours } from "@/components/TopographicContours";
 import { SubscribeForm } from "@/components/SubscribeForm";
 import { InboxPreviewWidget } from "@/components/InboxPreviewWidget";

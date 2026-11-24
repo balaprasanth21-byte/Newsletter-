@@ -1,0 +1,23 @@
+# Meridian Canopy - Weekly Industry Intelligence & Newsletter Platform
+# ----------------------------------------------------------------------
+# This project is a Next.js 16 (React 19 + TypeScript) web application.
+# The primary application dependencies are defined in package.json and installed via npm:
+#   npm install
+#   npm run dev
+#
+# If extending this platform with Python backend / data processing services,
+# the recommended Python packages are listed below:
+# ----------------------------------------------------------------------
+
+# Web & API Framework
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+
+# HTTP Requests & Web Scraping (e.g. newsletter feeds)
+requests>=2.32.0
+httpx>=0.27.0
+beautifulsoup4>=4.12.0
+
+# Data & Environment
+pydantic>=2.8.0
+python-dotenv>=1.0.1

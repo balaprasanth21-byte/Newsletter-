@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ArrowRight, Calendar, Clock, BookOpen } from "lucide-react";
-import { CATEGORIES, WEEKLY_EDITIONS, getArticleBySlug } from "@/data/intelligence";
+import { CATEGORIES, WEEKLY_EDITIONS, getArticleBySlug } from "@/data";
 import { Category } from "@/types/intelligence";
 import { EditorialArtwork } from "@/components/EditorialArtwork";
 

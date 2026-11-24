@@ -28,12 +28,13 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   title: {
     default:
-      "Meridian Canopy — Global Agriculture & Crop Science Weekly Intelligence",
-    template: "%s | Meridian Canopy Intelligence",
+      "Kreya Branding — Global Industry Intelligence & Weekly Newsletter Platform",
+    template: "%s | Kreya Branding",
   },
   description:
-    "Every Monday, we distill the biggest breakthroughs in crop science, biologicals, AgTech, and global markets—and what they mean for agribusiness leaders.",
+    "Every Monday, Kreya Branding distills the biggest breakthroughs in crop science, biologicals, AgTech, and global markets—and what they mean for agribusiness leaders.",
   keywords: [
+    "Kreya Branding",
     "Agriculture Intelligence",
     "Crop Science Newsletter",
     "Biologicals",

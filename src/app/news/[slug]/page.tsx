@@ -6,7 +6,7 @@ import {
   getArticleBySlug,
   getArticlesByIssue,
   getNextArticle,
-} from "@/data/intelligence";
+} from "@/data";
 import { ArticleDetailClient } from "@/components/ArticleDetailClient";
 
 export function generateStaticParams() {

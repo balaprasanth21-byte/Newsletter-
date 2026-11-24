@@ -1,4 +1,4 @@
-# Meridian Canopy — Global Industry Intelligence & Weekly Newsletter Platform
+# Kreya Branding — Global Industry Intelligence & Weekly Newsletter Platform
 
 A modern, ultra-responsive, animation-rich **B2B Weekly Industry Intelligence & Newsletter Platform** built with **Next.js 16 (App Router)**, **React 19**, **Tailwind CSS v4**, **Framer Motion**, and **Lucide Icons**.
 

@@ -12,7 +12,7 @@ import {
   BookOpen,
   Layers,
 } from "lucide-react";
-import { WEEKLY_EDITIONS, getArticleBySlug } from "@/data/intelligence";
+import { WEEKLY_EDITIONS, getArticleBySlug } from "@/data";
 import { WeeklyEdition } from "@/types/intelligence";
 import { EditorialArtwork } from "@/components/EditorialArtwork";
 

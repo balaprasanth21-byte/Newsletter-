@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
 import { TrendingUp, Globe2, ArrowUpRight } from "lucide-react";
 import Link from "next/link";
-import { MARKET_SIGNALS } from "@/data/intelligence";
+import { MARKET_SIGNALS } from "@/data";
 import { MarketSignal } from "@/types/intelligence";
 
 function AnimatedCounter({
