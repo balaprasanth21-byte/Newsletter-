@@ -1,0 +1,159 @@
+@import "tailwindcss";
+
+:root {
+  /* Strict Organic Botanical Palette — Zero Pure Black or Cold Grays */
+  --bg-canvas: #F9F6F0;
+  --bg-card: #FFFDF9;
+  --bg-subtle: #F2ECE1;
+  --border-warm: #E6DFD3;
+  --border-warm-strong: #D5CBB8;
+
+  --ink-primary: #0D2B22;
+  --ink-secondary: #24473B;
+  --ink-muted: #4D6B60;
+  --ink-on-emerald: #F9F6F0;
+  --ink-on-emerald-muted: #B8CFC4;
+
+  --accent-terracotta: #C85A32;
+  --accent-terracotta-hover: #B04822;
+  --accent-terracotta-soft: #F9EAE4;
+
+  --accent-chlorophyll: #2E7D4F;
+  --accent-sage: #E3EFE8;
+
+  --accent-ochre: #D99B26;
+  --accent-amber: #FDF4E3;
+
+  --glass-cream: rgba(249, 246, 240, 0.85);
+  --shadow-emerald-sm: 0 4px 18px rgba(13, 43, 34, 0.06);
+  --shadow-emerald-md: 0 12px 32px rgba(13, 43, 34, 0.08);
+  --shadow-emerald-lg: 0 22px 48px rgba(13, 43, 34, 0.12);
+}
+
+@theme inline {
+  --color-canvas: var(--bg-canvas);
+  --color-card: var(--bg-card);
+  --color-subtle: var(--bg-subtle);
+  --color-warm-border: var(--border-warm);
+  --color-warm-border-strong: var(--border-warm-strong);
+
+  --color-emerald-canopy: var(--ink-primary);
+  --color-moss-slate: var(--ink-secondary);
+  --color-botanical-muted: var(--ink-muted);
+
+  --color-terracotta: var(--accent-terracotta);
+  --color-terracotta-hover: var(--accent-terracotta-hover);
+  --color-terracotta-soft: var(--accent-terracotta-soft);
+
+  --color-chlorophyll: var(--accent-chlorophyll);
+  --color-sage: var(--accent-sage);
+
+  --color-ochre: var(--accent-ochre);
+  --color-amber-tint: var(--accent-amber);
+
+  --font-serif: var(--font-fraunces), Georgia, serif;
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, sans-serif;
+  --font-mono: var(--font-jetbrains-mono), ui-monospace, monospace;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+}
+
+body {
+  background-color: var(--bg-canvas);
+  color: var(--ink-primary);
+  font-family: var(--font-jakarta), system-ui, sans-serif;
+  line-height: 1.65;
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Tactile subtle editorial parchment grain */
+.editorial-grain {
+  background-image: radial-gradient(
+    rgba(13, 43, 34, 0.03) 0.75px,
+    transparent 0.75px
+  );
+  background-size: 20px 20px;
+}
+
+/* Editorial typography utilities */
+.font-editorial {
+  font-family: var(--font-fraunces), Georgia, serif;
+  letter-spacing: -0.02em;
+}
+
+.font-data {
+  font-family: var(--font-jetbrains-mono), ui-monospace, monospace;
+  letter-spacing: 0.06em;
+  font-variant-numeric: tabular-nums;
+}
+
+/* Fluid editorial display sizing */
+.hero-headline {
+  font-size: clamp(2.15rem, 4.4vw, 3.85rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+}
+
+.section-headline {
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+}
+
+.article-headline {
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+
+/* Glass navigation surface */
+.glass-cream {
+  background-color: rgba(249, 246, 240, 0.85);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+/* Elevated card surface with warm emerald-tinted shadow */
+.editorial-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-warm);
+  box-shadow: var(--shadow-emerald-sm);
+  transition:
+    border-color 240ms ease,
+    box-shadow 260ms ease,
+    transform 260ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.editorial-card:hover {
+  border-color: rgba(200, 90, 50, 0.48);
+  box-shadow:
+    0 16px 36px rgba(13, 43, 34, 0.1),
+    0 0 0 1px rgba(217, 155, 38, 0.22);
+}
+
+/* Hide scrollbars cleanly for mobile horizontal snap decks */
+.no-scrollbar {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Custom selection highlight in warm terracotta */
+::selection {
+  background-color: rgba(200, 90, 50, 0.2);
+  color: #0D2B22;
+}
+
+/* Accessible focus rings in sunlit terracotta */
+:focus-visible {
+  outline: 2px solid #C85A32;
+  outline-offset: 2px;
+}
